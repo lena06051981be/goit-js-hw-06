@@ -7,3 +7,4 @@ inputRef.addEventListener('input', () => {
     }
     spanNameRef.textContent = inputRef.value;
 });
+// 
