@@ -8,7 +8,7 @@ const ingredients = [
 ];
 
 const ingrListRef = document.querySelector("#ingredients");
-// console.log(ingrListRef);
+console.log(ingrListRef);
 
 // -----v1-----
 const ingrListEl = [];
