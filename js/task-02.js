@@ -30,5 +30,5 @@ const ingrListEl = ingredients
   .map((ingredient) => `<li class="item">${ingredient}</li>`)
   .join("");
 
-  // console.log(ingrListEl);
+  console.log(ingrListEl);
 ingrListRef.insertAdjacentHTML("beforeend", ingrListEl);
