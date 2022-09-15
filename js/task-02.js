@@ -11,24 +11,24 @@ const ingrListRef = document.querySelector("#ingredients");
 // console.log(ingrListRef);
 
 // -----v1-----
-const ingrListEl = [];
+// const ingrListEl = [];
 
-ingredients.forEach((ingredient) => {
-  const ingrListItem = document.createElement("li");
-  ingrListItem.textContent = ingredient;
-  ingrListItem.classList.add("item");
-  console.log(ingrListItem);
-  ingrListEl.push(ingrListItem);
-});
+// ingredients.forEach((ingredient) => {
+//   const ingrListItem = document.createElement("li");
+//   ingrListItem.textContent = ingredient;
+//   ingrListItem.classList.add("item");
+//   console.log(ingrListItem);
+//   ingrListEl.push(ingrListItem);
+// });
 
-// console.log(ingrListEl);
+// // console.log(ingrListEl);
 
-ingrListRef.append(...ingrListEl);
+// ingrListRef.append(...ingrListEl);
 
 // -----v2-----
-// const ingrListEl = ingredients
-//   .map((ingredient) => `<li class="item">${ingredient}</li>`)
-//   .join("");
+const ingrListEl = ingredients
+  .map((ingredient) => `<li class="item">${ingredient}</li>`)
+  .join("");
 
-//   // console.log(ingrListEl);
-// ingrListRef.insertAdjacentHTML("beforeend", ingrListEl);
+  // console.log(ingrListEl);
+ingrListRef.insertAdjacentHTML("beforeend", ingrListEl);
