@@ -21,7 +21,7 @@ ingredients.forEach((ingredient) => {
   ingrListEl.push(ingrListItem);
 });
 
-console.log(ingrListEl);
+// console.log(ingrListEl);
 
 ingrListRef.append(...ingrListEl);
 
