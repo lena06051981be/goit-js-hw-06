@@ -16,4 +16,3 @@ function fillSubmit(event) {
   console.log(submitData);
   event.currentTarget.reset();
 }
-
