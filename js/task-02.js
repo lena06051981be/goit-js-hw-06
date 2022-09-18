@@ -1,34 +1,29 @@
 const ingredients = [
-  'Potatoes',
-  'Mushrooms',
-  'Garlic',
-  'Tomatos',
-  'Herbs',
-  'Condiments',
+  "Potatoes",
+  "Mushrooms",
+  "Garlic",
+  "Tomatos",
+  "Herbs",
+  "Condiments",
 ];
 
-const ingrListRef = document.querySelector("#ingredients");
-console.log(ingrListRef);
+const ingridientsList = document.querySelector("#ingredients");
+// console.log(ingridientsList);
 
-// -----v1-----
-const ingrListEl = [];
+const ingredientsArray = ingredients.map((elem) => {
+  const itemList = document.createElement("li");
+  itemList.textContent = elem;
+  itemList.classList.add("item");
 
-ingredients.forEach((ingredient) => {
-  const ingrListItem = document.createElement("li");
-  ingrListItem.textContent = ingredient;
-  ingrListItem.classList.add("item");
-  console.log(ingrListItem);
-  ingrListEl.push(ingrListItem);
+  return itemList;
 });
 
-// console.log(ingrListEl);
+ingridientsList.append(...ingredientsArray);
+// console.log(ingridientsList);
 
-ingrListRef.append(...ingrListEl);
-
-// -----v2-----
-// const ingrListEl = ingredients
-//   .map((ingredient) => `<li class="item">${ingredient}</li>`)
+// const ingridientListEl = ingredients
+//   .map((elem) => `<li class="item">${elem}</li>`)
 //   .join("");
 
-//   // console.log(ingrListEl);
-// ingrListRef.insertAdjacentHTML("beforeend", ingrListEl);
+// // console.log(ingrListEl);
+// ingridientsList.insertAdjacentHTML("beforeend", ingridientListEl);
