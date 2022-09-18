@@ -22,6 +22,7 @@ function createBoxes(inputValue) {
     size += 10;
   }
 }
+
 // -----V2-----
 // function createBoxes(inputValue) {
 //   boxRef.innerHTML = "";
