@@ -3,7 +3,8 @@ console.log(`set value: ${inputRangeRef.value}`);
 const changeTextRef = document.querySelector("#text");
 changeTextRef.style.fontSize = `${inputRangeRef.value}px`;
 
-inputRangeRef.addEventListener("change", inputFontSize);
+// inputRangeRef.addEventListener("change", inputfontSize); change - ментор попросил исправить
+inputRangeRef.addEventListener("input", inputFontSize);
 
 function inputFontSize() {
   changeTextRef.style.fontSize = `${inputRangeRef.value}px`;
